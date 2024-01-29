@@ -7,9 +7,9 @@ public class Editor4 {
 		String source = args[0];
 		int n = Integer.parseInt(args[1]);
 		Color[][] sourceImage = Runigram.read(source);
-		Color[][] Grey = Runigram.grayScaled(sourceImage);
+		Color[][] GrayS = Runigram.grayScaled(sourceImage);
 		Runigram.setCanvas(sourceImage);
-		Runigram.morph(sourceImage, Grey, n);
+		Runigram.morph(sourceImage, GrayS, n);
 	}
 
     
